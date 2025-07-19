@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nhà hàng – Bia Club</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+  <!-- ===== HEADER ===== -->
+  <header class="header">
+    <div class="container header__content">
+      <a href="index.html" class="logo gradient-text strong-shadow">MyNgocOcean</a>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Trang chủ</a></li>
+          <li class="dropdown">
+            <a href="#" class="gradient-text">Hệ sinh thái <span class="material-icons" style="font-size:1em;vertical-align:middle;">expand_more</span></a>
+            <ul class="dropdown-menu">
+              <li><a href="oceanland.html">OceanLand</a></li>
+              <li><a href="oceanassignment.html">OceanAssignment</a></li>
+              <li><a href="oceandecor.html">OceanDecor</a></li>
+              <li><a href="pccc.html">PCCC</a></li>
+              <li><a href="anninh.html">An ninh</a></li>
+              <li><a href="changanoi.html">Chăn ga</a></li>
+              <li><a href="nhahang.html">Nhà hàng</a></li>
+              <li><a href="oceantour.html">OceanTour</a></li>
+            </ul>
+          </li>
+          <li><a href="baiviet.html">Tin tức</a></li>
+          <li><a href="contact.html">Liên hệ</a></li>
+        </ul>
+      </nav>
+      <!-- <button class="search-btn" aria-label="Tìm kiếm">
+        <span class="material-icons">search</span>
+      </button> -->
+      <div class="mobile-nav-buttons" style="position: relative; display: flex; align-items: center;">
+        <button class="mobile-nav-toggle" id="mobileMenuBtn" aria-label="Mở menu" onclick="toggleMobileMenu()" style="position: absolute; top: 0; right: 0; z-index: 120; background: #fff; border: none; border-radius: 50%; box-shadow: 0 2px 8px rgba(10,110,189,0.10); width: 44px; height: 44px; align-items: center; justify-content: center; font-size: 2rem; cursor: pointer; display: flex;">
+          <span class="material-icons">menu</span>
+        </button>
+        <button class="mobile-nav-close" id="mobileCloseBtn" aria-label="Đóng menu" onclick="closeMobileMenu()" style="position: absolute; top: 0; right: 0; z-index: 120; background: #fff; border: none; border-radius: 50%; box-shadow: 0 2px 8px rgba(10,110,189,0.10); width: 44px; height: 44px; align-items: center; justify-content: center; font-size: 2rem; cursor: pointer; display: none;">
+          <span class="material-icons">close</span>
+        </button>
+      </div>
+    </div>
+    <div class="menu-overlay" onclick="closeMobileMenu()"></div>
+  </header>
+  <!-- ===== BANNER NHÀ HÀNG ===== -->
+  <section class="banner-slider small-banner strong-shadow">
+    <div class="slider glass">
+      <div class="slide active">
+        <div class="slide-img glass" style="height:140px;"></div>
+        <div class="slide-caption banner-caption gradient-text">Nhà hàng – Bia Club</div>
+      </div>
+    </div>
+  </section>
+  <!-- ===== MENU ĐỒ ĂN – THỨC UỐNG ===== -->
+  <section class="menu-section container">
+    <h2 class="section-title gradient-text">Menu</h2>
+    <table class="menu-table">
+      <thead><tr><th>Món ăn</th><th>Giá</th></tr></thead>
+      <tbody>
+        <tr><td>Bò nướng tảng</td><td>350.000đ</td></tr>
+        <tr><td>Gà quay lu</td><td>220.000đ</td></tr>
+        <tr><td>Lẩu hải sản</td><td>400.000đ</td></tr>
+        <tr><td>Bia tươi</td><td>35.000đ/cốc</td></tr>
+        <tr><td>Cocktail đặc biệt</td><td>80.000đ</td></tr>
+      </tbody>
+    </table>
+  </section>
+  <!-- ===== FORM ĐẶT BÀN ===== -->
+  <section class="booking-form container">
+    <h2 class="section-title gradient-text">Đặt bàn</h2>
+    <form class="contact-form">
+      <input type="text" placeholder="Họ và tên" required>
+      <input type="tel" placeholder="Số điện thoại" required>
+      <input type="date" required>
+      <input type="time" required>
+      <input type="number" placeholder="Số lượng khách" required>
+      <button type="submit" class="ripple-btn">Đặt bàn</button>
+    </form>
+  </section>
+  <!-- ===== CHƯƠNG TRÌNH ƯU ĐÃI ===== -->
+  <section class="promotion container">
+    <h2 class="section-title gradient-text">Ưu đãi & Happy Hour</h2>
+    <div class="sections-grid">
+      <div class="section-card strong-shadow"><div class="card-icon glass"><span class="material-icons">local_offer</span></div><h3 class="gradient-text">Giảm 20% bia tươi</h3><p>Áp dụng 17h-19h hàng ngày</p></div>
+      <div class="section-card strong-shadow"><div class="card-icon glass"><span class="material-icons">celebration</span></div><h3 class="gradient-text">Tặng món tráng miệng</h3><p>Cho nhóm đặt bàn từ 6 người</p></div>
+    </div>
+  </section>
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer__content">
+      <div class="footer-col">
+        <h3 class="gradient-text">MyNgocOcean</h3>
+        <p>Địa chỉ: 123 Đường Biển, TP. Vũng Tàu<br>Hotline: 0123 456 789<br>Email: info@myngococean.vn</p>
+        <div class="social-icons">
+          <a href="#"><span class="material-icons">facebook</span></a>
+          <a href="#"><span class="material-icons">instagram</span></a>
+          <a href="#"><span class="material-icons">youtube</span></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4 class="gradient-text">Liên kết nhanh</h4>
+        <ul>
+          <li><a href="index.html">Trang chủ</a></li>
+          <li><a href="oceanland.html">OceanLand</a></li>
+          <li><a href="oceanassignment.html">OceanAssignment</a></li>
+          <li><a href="oceandecor.html">OceanDecor</a></li>
+          <li><a href="pccc.html">PCCC</a></li>
+          <li><a href="anninh.html">An ninh</a></li>
+          <li><a href="changanoi.html">Chăn ga</a></li>
+          <li><a href="nhahang.html">Nhà hàng</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Liên hệ</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 class="gradient-text">Đăng ký nhận tin</h4>
+        <form class="subscribe-form">
+          <input type="email" placeholder="Nhập email của bạn" required>
+          <button type="submit" class="strong-shadow"><span class="material-icons">send</span></button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">&copy; 2024 MyNgocOcean. All rights reserved.</div>
+  </footer>
+  <script>
+    function toggleMobileMenu() {
+      var nav = document.querySelector('.main-nav ul');
+      var overlay = document.querySelector('.menu-overlay');
+      var closeBtn = document.getElementById('mobileCloseBtn');
+      var menuBtn = document.getElementById('mobileMenuBtn');
+      nav.classList.toggle('open');
+      overlay.classList.toggle('open');
+      if(nav.classList.contains('open')) {
+        closeBtn.style.display = 'flex';
+        menuBtn.style.display = 'none';
+      } else {
+        closeBtn.style.display = 'none';
+        menuBtn.style.display = 'flex';
+      }
+    }
+    function closeMobileMenu() {
+      var nav = document.querySelector('.main-nav ul');
+      var overlay = document.querySelector('.menu-overlay');
+      var closeBtn = document.getElementById('mobileCloseBtn');
+      var menuBtn = document.getElementById('mobileMenuBtn');
+      nav.classList.remove('open');
+      overlay.classList.remove('open');
+      closeBtn.style.display = 'none';
+      menuBtn.style.display = 'flex';
+    }
+    document.querySelectorAll('.main-nav .dropdown > a').forEach(function(drop){
+      drop.addEventListener('click', function(e){
+        if(window.innerWidth <= 1024) {
+          e.preventDefault();
+          var parent = this.parentElement;
+          parent.classList.toggle('open');
+          document.querySelectorAll('.main-nav .dropdown').forEach(function(other){
+            if(other !== parent) other.classList.remove('open');
+          });
+        }
+      });
+    });
+    </script>
+</body>
+</html> 

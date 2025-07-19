@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MyNgocOcean Ecosystem</title>
+  <link rel="stylesheet" href="/styles.css">
+  
+  <!-- Google Fonts (tùy chọn) -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Material Icons cho icon tìm kiếm, mạng xã hội -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+  <!-- ===== HEADER ===== -->
+  <header class="header">
+    <div class="container header__content">
+      <a href="index.html" class="logo gradient-text strong-shadow">MyNgocOcean</a>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html" class="gradient-text">Trang chủ</a></li>
+          <li class="dropdown">
+            <a href="#" class="gradient-text">Lĩnh vực <span class="material-icons" style="font-size:1em;vertical-align:middle;">expand_more</span></a>
+            <ul class="dropdown-menu">
+              <li><a href="oceanland.html">OceanLand</a></li>
+              <li><a href="oceandecor.html">OceanDecor</a></li>
+              <li><a href="oceanassignment.html">OceanAssignment</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="gradient-text">Tiện ích & Dịch vụ <span class="material-icons" style="font-size:1em;vertical-align:middle;">expand_more</span></a>
+            <ul class="dropdown-menu">
+              <li><a href="tienich.html#khuvuichoi">Khu vui chơi giải trí</a></li>
+              <li><a href="tienich.html#beerclub">Beer Club</a></li>
+              <li><a href="tienich.html#nhahang">Nhà hàng</a></li>
+              <li><a href="tienich.html#pccc">PCCC</a></li>
+              <li><a href="tienich.html#anninh">An ninh</a></li>
+            </ul>
+          </li>
+          <li><a href="baiviet.html" class="gradient-text">Tin tức</a></li>
+          <li><a href="contact.html" class="gradient-text">Liên hệ</a></li>
+        </ul>
+      </nav>
+      <!-- <button class="search-btn" aria-label="Tìm kiếm">
+        <span class="material-icons">search</span>
+      </button> -->
+      <div class="mobile-nav-buttons" >
+        <button class="mobile-nav-toggle" id="mobileMenuBtn" aria-label="Mở menu" onclick="toggleMobileMenu()" style="position: absolute; top: 0; right: 0; z-index: 120; background: #fff; border: none; border-radius: 50%; box-shadow: 0 2px 8px rgba(10,110,189,0.10); width: 44px; height: 44px; align-items: center; justify-content: center; font-size: 2rem; cursor: pointer; display: flex;">
+          <span class="material-icons">menu</span>
+        </button>
+        <button class="mobile-nav-close" id="mobileCloseBtn" aria-label="Đóng menu" onclick="closeMobileMenu()" style="position: absolute; top: 0; right: 0; z-index: 120; background: #fff; border: none; border-radius: 50%; box-shadow: 0 2px 8px rgba(10,110,189,0.10); width: 44px; height: 44px; align-items: center; justify-content: center; font-size: 2rem; cursor: pointer; display: none;">
+          <span class="material-icons">close</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== BANNER SLIDER ===== -->
+  <section class="banner-slider strong-shadow">
+    <div class="slider glass">
+      <div class="slide active">
+        <div class="slide-img glass"></div>
+        <div class="slide-caption banner-caption gradient-text">Chào mừng đến với hệ sinh thái MyNgocOcean</div>
+      </div>
+      <div class="slide">
+        <div class="slide-img glass"></div>
+        <div class="slide-caption banner-caption gradient-text">Khám phá các phân khu đa dạng</div>
+      </div>
+      <div class="slide">
+        <div class="slide-img glass"></div>
+        <div class="slide-caption banner-caption gradient-text">Kết nối cộng đồng, phát triển bền vững</div>
+      </div>
+      <button class="slider-btn prev strong-shadow" aria-label="Trước"><span class="material-icons">chevron_left</span></button>
+      <button class="slider-btn next strong-shadow" aria-label="Sau"><span class="material-icons">chevron_right</span></button>
+    </div>
+  </section>
+
+  <!-- ===== GIỚI THIỆU MYNGOCOCEAN ===== -->
+  <section class="about fade-section">
+    <div class="container about__content">
+      <div class="about__img"></div>
+      <div class="about__text">
+        <h2 class="section-title gradient-text">Giới thiệu MyNgocOcean</h2>
+        <p>MyNgocOcean là hệ sinh thái đa dịch vụ hàng đầu tại Vũng Tàu, cung cấp giải pháp toàn diện về bất động sản, quản lý tài sản, thiết kế nội thất, an ninh, PCCC, nhà hàng, du lịch và nhiều lĩnh vực khác. Chúng tôi hướng tới xây dựng cộng đồng hiện đại, tiện nghi, an toàn và phát triển bền vững.</p>
+      </div>
+    </div>
+  </section>
+  <!-- ===== TẦM NHÌN ===== -->
+  <section class="vision fade-section">
+    <div class="container">
+      <h2 class="section-title gradient-text">Tầm nhìn</h2>
+      <div class="vision-content">
+        <div class="vision-card strong-shadow glass">
+          <span class="material-icons" style="font-size:2.5rem;color:#0a6ebd;">visibility</span>
+          <p>Trở thành hệ sinh thái dịch vụ hàng đầu khu vực, tiên phong ứng dụng công nghệ, sáng tạo và phát triển bền vững, mang lại giá trị vượt trội cho khách hàng, đối tác và cộng đồng.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  </br>
+  <!-- ===== GIÁ TRỊ CỐT LÕI ===== -->
+  <section class="core-values fade-section">
+    <div class="container">
+      <h2 class="section-title gradient-text">Giá trị cốt lõi</h2>
+      <div class="core-values-grid">
+        <div class="core-value-card strong-shadow glass">
+          <span class="material-icons" style="font-size:2rem;color:#0a6ebd;">emoji_objects</span>
+          <h3>Sáng tạo</h3>
+          <p>Không ngừng đổi mới, tạo ra giải pháp tối ưu cho khách hàng.</p>
+        </div>
+        <div class="core-value-card strong-shadow glass">
+          <span class="material-icons" style="font-size:2rem;color:#0a6ebd;">groups</span>
+          <h3>Khách hàng là trung tâm</h3>
+          <p>Lấy sự hài lòng của khách hàng làm kim chỉ nam cho mọi hoạt động.</p>
+        </div>
+        <div class="core-value-card strong-shadow glass">
+          <span class="material-icons" style="font-size:2rem;color:#0a6ebd;">verified</span>
+          <h3>Chất lượng & Uy tín</h3>
+          <p>Cam kết chất lượng dịch vụ, xây dựng niềm tin vững chắc với đối tác và cộng đồng.</p>
+        </div>
+        <div class="core-value-card strong-shadow glass">
+          <span class="material-icons" style="font-size:2rem;color:#0a6ebd;">public</span>
+          <h3>Phát triển bền vững</h3>
+          <p>Hài hòa lợi ích kinh doanh với trách nhiệm xã hội và môi trường.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ===== SƠ ĐỒ TỔ CHỨC ===== -->
+  <section class="orgchart-section">
+    <div class="orgchart-container">
+      <div class="orgchart-title">Sơ đồ tổ chức MyNgocOcean</div>
+      <div class="orgchart-level">
+        <div class="orgchart-box main">HỘI ĐỒNG QUẢN TRỊ</div>
+      </div>
+      <div class="orgchart-line"></div>
+      <div class="orgchart-level">
+        <div class="orgchart-box main">BAN TỔNG GIÁM ĐỐC</div>
+      </div>
+      <div class="orgchart-connect"><div class="hline"></div></div>
+      <div class="orgchart-branch">
+        <div class="orgchart-box sub">OceanLand<br><span style="font-size:0.95em;font-weight:400;">BĐS</span></div>
+        <div class="orgchart-box sub">OceanAssignment<br><span style="font-size:0.95em;font-weight:400;">Quản lý tài sản</span></div>
+        <div class="orgchart-box sub">OceanDecor<br><span style="font-size:0.95em;font-weight:400;">Nội thất</span></div>
+        <div class="orgchart-box sub">OceanTour<br><span style="font-size:0.95em;font-weight:400;">Du lịch</span></div>
+        <div class="orgchart-box sub">PCCC<br><span style="font-size:0.95em;font-weight:400;">Phòng cháy chữa cháy</span></div>
+        <div class="orgchart-box sub">An ninh<br><span style="font-size:0.95em;font-weight:400;">Long Sơn</span></div>
+        <div class="orgchart-box sub">Chăn ga<br><span style="font-size:0.95em;font-weight:400;">& Nội thất</span></div>
+      </div>
+      <div class="orgchart-connect"><div class="hline"></div></div>
+      <div class="orgchart-level" style="margin-bottom:0;">
+        <div class="orgchart-box sub" style="background:#e3f2fd;color:#0a6ebd;">BAN TRỢ LÝ - THƯ KÝ</div>
+      </div>
+      <div class="orgchart-line"></div>
+      <div class="orgchart-functions">
+        <div class="orgchart-functions-title">Các phòng ban chức năng</div>
+        <div class="orgchart-functions-list">
+          <div class="orgchart-function"><span class="material-icons">calculate</span><span>Phòng Tài chính<br>Kế toán</span></div>
+          <div class="orgchart-function"><span class="material-icons">gavel</span><span>Phòng Pháp lý</span></div>
+          <div class="orgchart-function"><span class="material-icons">groups</span><span>Phòng Hành chính<br>Nhân sự</span></div>
+          <div class="orgchart-function"><span class="material-icons">settings</span><span>Phòng Quản trị hệ thống</span></div>
+          <div class="orgchart-function"><span class="material-icons">science</span><span>Phòng Nghiên cứu<br>& Phát triển</span></div>
+          <div class="orgchart-function"><span class="material-icons">engineering</span><span>Phòng Phát triển dự án</span></div>
+          <div class="orgchart-function"><span class="material-icons">campaign</span><span>Phòng Tiếp thị<br>Truyền thông</span></div>
+          <div class="orgchart-function"><span class="material-icons">support_agent</span><span>Phòng Dịch vụ<br>Khách hàng</span></div>
+          <div class="orgchart-function"><span class="material-icons">handshake</span><span>Phòng Phát triển<br>Đại lý KD</span></div>
+          <div class="orgchart-function"><span class="material-icons">storefront</span><span>Hệ thống<br>Sàn giao dịch</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ===== CÁC LĨNH VỰC CHÍNH ===== -->
+  <section class="main-sections">
+    <div class="container">
+      <h2 class="gradient-text section-title">Các lĩnh vực chính</h2>
+      <div class="sections-grid">
+
+
+        <div class="section-card strong-shadow">
+          <div class="card-icon glass"><span class="material-icons">location_city</span></div>
+          <h3 class="gradient-text">Bất động sản</h3>
+          <p>OceanLand – Sàn giao dịch, đầu tư, phát triển dự án.</p>
+        </div>
+        <div class="section-card strong-shadow">
+          <div class="card-icon glass"><span class="material-icons">assignment</span></div>
+          <h3 class="gradient-text">Quản lý tài sản</h3>
+          <p>OceanAssignment – Quản lý căn hộ, biệt thự, văn phòng.</p>
+        </div>
+        <div class="section-card strong-shadow">
+          <div class="card-icon glass"><span class="material-icons">weekend</span></div>
+          <h3 class="gradient-text">Nội thất</h3>
+          <p>OceanDecor – Thiết kế, thi công, cung cấp nội thất.</p>
+        </div>
+        <div class="section-card strong-shadow">
+          <div class="card-icon glass"><span class="material-icons">miscellaneous_services</span></div>
+          <h3 class="gradient-text">Tiện ích dịch vụ</h3>
+          <p>PCCC, An ninh, hỗ trợ vận hành, dịch vụ cộng đồng.</p>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TIN TỨC MỚI NHẤT ===== -->
+  <section class="news fade-section visible">
+    <div class="container">
+      <h2 class="gradient-text section-title">TIN TỨC MỚI NHẤT</h2>
+      <div class="news-list visible">
+        <article class="news-item visible">
+          <div class="news-img"></div>
+          <div class="news-content">
+            <h3>Ra mắt phân khu OceanLand</h3>
+            <p>Phân khu bất động sản OceanLand chính thức đi vào hoạt động với nhiều ưu đãi hấp dẫn...</p>
+          </div>
+        </article>
+        <article class="news-item visible">
+          <div class="news-img"></div>
+          <div class="news-content">
+            <h3>OceanDecor khai trương showroom mới</h3>
+            <p>Showroom nội thất OceanDecor mang đến trải nghiệm mua sắm hiện đại, đa dạng sản phẩm...</p>
+          </div>
+        </article>
+        <article class="news-item visible">
+          <div class="news-img"></div>
+          <div class="news-content">
+            <h3>Chương trình ưu đãi mùa hè</h3>
+            <p>Hàng loạt ưu đãi hấp dẫn dành cho khách hàng khi sử dụng dịch vụ tại MyNgocOcean...</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FORM LIÊN HỆ NHANH ===== -->
+  <section class="contact">
+    <div class="container contact__content">
+      <h2 class="gradient-text section-title">LIÊN HỆ NHANH</h2>
+      <form class="contact-form" autocomplete="off">
+        <div class="form-row">
+          <input type="text" name="name" placeholder="Họ và tên" required>
+          <input type="email" name="email" placeholder="Email" required>
+        </div>
+        <div class="form-row">
+          <input type="tel" name="phone" placeholder="Số điện thoại" required>
+        </div>
+        <div class="form-row">
+          <textarea name="message" rows="3" placeholder="Nội dung liên hệ" required></textarea>
+        </div>
+        <button type="submit" class="ripple-btn strong-shadow">Gửi liên hệ</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer__content">
+      <div class="footer-col">
+        <h3 class="gradient-text">MyNgocOcean</h3>
+        <p>
+          Địa chỉ: 123 Đường Biển, TP. Vũng Tàu<br>
+          Hotline: 0123 456 789<br>
+          Email: info@myngococean.vn
+        </p>
+        <div class="social-icons">
+          <a href="#" aria-label="Facebook"><span class="material-icons">facebook</span></a>
+          <a href="#" aria-label="Instagram"><span class="material-icons">instagram</span></a>
+          <a href="#" aria-label="YouTube"><span class="material-icons">youtube</span></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4 class="gradient-text">Liên kết nhanh</h4>
+        <ul>
+          <li><a href="#">Trang chủ</a></li>
+          <li><a href="#">Phân khu</a></li>
+          <li><a href="#">Tin tức</a></li>
+          <li><a href="#">Liên hệ</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 class="gradient-text">Đăng ký nhận tin</h4>
+        <form class="subscribe-form">
+          <input type="email" placeholder="Nhập email của bạn" required>
+          <button type="submit" class="strong-shadow"><span class="material-icons">send</span></button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2024 MyNgocOcean. All rights reserved.
+    </div>
+  </footer>
+
+  <!-- ===== SCRIPT SLIDER & FADE-IN ===== -->
+  <script>
+    function toggleMobileMenu() {
+      var nav = document.querySelector('.main-nav ul');
+      var overlay = document.querySelector('.menu-overlay');
+      var closeBtn = document.getElementById('mobileCloseBtn');
+      var menuBtn = document.getElementById('mobileMenuBtn');
+      nav.classList.toggle('open');
+      overlay.classList.toggle('open');
+      if(nav.classList.contains('open')) {
+        closeBtn.style.display = 'flex';
+        menuBtn.style.display = 'none';
+      } else {
+        closeBtn.style.display = 'none';
+        menuBtn.style.display = 'flex';
+      }
+    }
+    function closeMobileMenu() {
+      var nav = document.querySelector('.main-nav ul');
+      var overlay = document.querySelector('.menu-overlay');
+      var closeBtn = document.getElementById('mobileCloseBtn');
+      var menuBtn = document.getElementById('mobileMenuBtn');
+      nav.classList.remove('open');
+      overlay.classList.remove('open');
+      closeBtn.style.display = 'none';
+      menuBtn.style.display = 'flex';
+    }
+    document.querySelectorAll('.main-nav .dropdown > a').forEach(function(drop){
+      drop.addEventListener('click', function(e){
+        if(window.innerWidth <= 1024) {
+          e.preventDefault();
+          var parent = this.parentElement;
+          parent.classList.toggle('open');
+          document.querySelectorAll('.main-nav .dropdown').forEach(function(other){
+            if(other !== parent) other.classList.remove('open');
+          });
+        }
+      });
+    });
+    document.querySelectorAll('.fade-section').forEach(function(sec){
+      sec.classList.add('visible');
+    });
+  </script>
+</body>
+</html>

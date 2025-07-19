@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Liên hệ - MyNgocOcean</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+  <!-- ===== HEADER ===== -->
+  <header class="header">
+    <div class="container header__content">
+      <a href="index.html" class="logo gradient-text strong-shadow">MyNgocOcean</a>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html" class="gradient-text">Trang chủ</a></li>
+          <li class="dropdown">
+            <a href="#" class="gradient-text">Lĩnh vực <span class="material-icons" style="font-size:1em;vertical-align:middle;">expand_more</span></a>
+            <ul class="dropdown-menu">
+              <li><a href="oceanland.html">OceanLand</a></li>
+              <li><a href="oceandecor.html">OceanDecor</a></li>
+              <li><a href="oceanassignment.html">OceanAssignment</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="gradient-text">Tiện ích & Dịch vụ <span class="material-icons" style="font-size:1em;vertical-align:middle;">expand_more</span></a>
+            <ul class="dropdown-menu">
+              <li><a href="tienich.html#khuvuichoi">Khu vui chơi giải trí</a></li>
+              <li><a href="tienich.html#beerclub">Beer Club</a></li>
+              <li><a href="tienich.html#nhahang">Nhà hàng</a></li>
+              <li><a href="tienich.html#pccc">PCCC</a></li>
+              <li><a href="tienich.html#anninh">An ninh</a></li>
+            </ul>
+          </li>
+          <li><a href="baiviet.html" class="gradient-text">Tin tức</a></li>
+          <li><a href="contact.html" class="gradient-text">Liên hệ</a></li>
+        </ul>
+      </nav>
+      <!-- <button class="search-btn" aria-label="Tìm kiếm">
+        <span class="material-icons">search</span>
+      </button> -->
+      <div class="mobile-nav-buttons" >
+        <button class="mobile-nav-toggle" id="mobileMenuBtn" aria-label="Mở menu" onclick="toggleMobileMenu()" style="position: absolute; top: 0; right: 0; z-index: 120; background: #fff; border: none; border-radius: 50%; box-shadow: 0 2px 8px rgba(10,110,189,0.10); width: 44px; height: 44px; align-items: center; justify-content: center; font-size: 2rem; cursor: pointer; display: flex;">
+          <span class="material-icons">menu</span>
+        </button>
+        <button class="mobile-nav-close" id="mobileCloseBtn" aria-label="Đóng menu" onclick="closeMobileMenu()" style="position: absolute; top: 0; right: 0; z-index: 120; background: #fff; border: none; border-radius: 50%; box-shadow: 0 2px 8px rgba(10,110,189,0.10); width: 44px; height: 44px; align-items: center; justify-content: center; font-size: 2rem; cursor: pointer; display: none;">
+          <span class="material-icons">close</span>
+        </button>
+      </div>
+    </div>
+  </header>
+  <div class="menu-overlay" onclick="closeMobileMenu()"></div>
+  <!-- ===== BẢN ĐỒ GOOGLE MAPS (PLACEHOLDER) ===== -->
+  <section class="map-section container">
+    <h2 class="section-title gradient-text">Bản đồ & Địa chỉ</h2>
+    <div class="map-placeholder" style="width:100%;height:260px;background:#e3f2fd;border-radius:16px;display:flex;align-items:center;justify-content:center;font-size:1.2rem;color:#0a6ebd;">Google Maps Placeholder</div>
+  </section>
+  <!-- ===== THÔNG TIN LIÊN HỆ ĐƠN VỊ ===== -->
+  <section class="contact-info container">
+    <h2 class="section-title gradient-text">Thông tin liên hệ</h2>
+    <div class="core-values-grid">
+      <div class="core-value-card strong-shadow glass">
+        <span class="material-icons" style="font-size:2rem;color:#0a6ebd;">location_city</span>
+        <h3>OceanLand</h3>
+        <p>Địa chỉ: 123 Đường Biển, Vũng Tàu<br>Hotline: 0123 456 789</p>
+      </div>
+      <div class="core-value-card strong-shadow glass">
+        <span class="material-icons" style="font-size:2rem;color:#0a6ebd;">assignment</span>
+        <h3>OceanAssignment</h3>
+        <p>Hotline: 0987 654 321</p>
+      </div>
+      <div class="core-value-card strong-shadow glass">
+        <span class="material-icons" style="font-size:2rem;color:#0a6ebd;">weekend</span>
+        <h3>OceanDecor</h3>
+        <p>Hotline: 0909 888 777</p>
+      </div>
+      <div class="core-value-card strong-shadow glass">
+        <span class="material-icons" style="font-size:2rem;color:#0a6ebd;">local_fire_department</span>
+        <h3>PCCC</h3>
+        <p>Hotline: 0911 222 333</p>
+      </div>
+      <div class="core-value-card strong-shadow glass">
+        <span class="material-icons" style="font-size:2rem;color:#0a6ebd;">security</span>
+        <h3>An ninh</h3>
+        <p>Hotline: 0933 444 555</p>
+      </div>
+      <div class="core-value-card strong-shadow glass">
+        <span class="material-icons" style="font-size:2rem;color:#0a6ebd;">hotel</span>
+        <h3>Chăn ga</h3>
+        <p>Hotline: 0977 666 888</p>
+      </div>
+      <div class="core-value-card strong-shadow glass">
+        <span class="material-icons" style="font-size:2rem;color:#0a6ebd;">restaurant</span>
+        <h3>Nhà hàng</h3>
+        <p>Hotline: 0901 234 567</p>
+      </div>
+      <div class="core-value-card strong-shadow glass">
+        <span class="material-icons" style="font-size:2rem;color:#0a6ebd;">tour</span>
+        <h3>OceanTour</h3>
+        <p>Hotline: 0902 345 678</p>
+      </div>
+    </div>
+  </section>
+  <!-- ===== FORM GỬI YÊU CẦU ===== -->
+  <section class="contact-form-section container">
+    <h2 class="section-title gradient-text">Gửi yêu cầu</h2>
+    <form class="contact-form">
+      <input type="text" placeholder="Họ và tên" required>
+      <input type="email" placeholder="Email" required>
+      <input type="tel" placeholder="Số điện thoại" required>
+      <textarea rows="3" placeholder="Nội dung liên hệ" required></textarea>
+      <button type="submit" class="ripple-btn">Gửi liên hệ</button>
+    </form>
+  </section>
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer__content">
+      <div class="footer-col">
+        <h3 class="gradient-text">MyNgocOcean</h3>
+        <p>Địa chỉ: 123 Đường Biển, TP. Vũng Tàu<br>Hotline: 0123 456 789<br>Email: info@myngococean.vn</p>
+        <div class="social-icons">
+          <a href="#"><span class="material-icons">facebook</span></a>
+          <a href="#"><span class="material-icons">instagram</span></a>
+          <a href="#"><span class="material-icons">youtube</span></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4 class="gradient-text">Liên kết nhanh</h4>
+        <ul>
+          <li><a href="index.html">Trang chủ</a></li>
+          <li><a href="oceanland.html">OceanLand</a></li>
+          <li><a href="oceanassignment.html">OceanAssignment</a></li>
+          <li><a href="oceandecor.html">OceanDecor</a></li>
+          <li><a href="pccc.html">PCCC</a></li>
+          <li><a href="anninh.html">An ninh</a></li>
+          <li><a href="changanoi.html">Chăn ga</a></li>
+          <li><a href="nhahang.html">Nhà hàng</a></li>
+          <li><a href="oceantour.html">OceanTour</a></li>
+          <li><a href="baiviet.html">Bài viết</a></li>
+          <li><a href="contact.html">Liên hệ</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 class="gradient-text">Đăng ký nhận tin</h4>
+        <form class="subscribe-form">
+          <input type="email" placeholder="Nhập email của bạn" required>
+          <button type="submit" class="strong-shadow"><span class="material-icons">send</span></button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">&copy; 2024 MyNgocOcean. All rights reserved.</div>
+  </footer>
+  <script>
+    function toggleMobileMenu() {
+      var nav = document.querySelector('.main-nav ul');
+      var overlay = document.querySelector('.menu-overlay');
+      var closeBtn = document.getElementById('mobileCloseBtn');
+      var menuBtn = document.getElementById('mobileMenuBtn');
+      nav.classList.toggle('open');
+      overlay.classList.toggle('open');
+      if(nav.classList.contains('open')) {
+        closeBtn.style.display = 'flex';
+        menuBtn.style.display = 'none';
+      } else {
+        closeBtn.style.display = 'none';
+        menuBtn.style.display = 'flex';
+      }
+    }
+    function closeMobileMenu() {
+      var nav = document.querySelector('.main-nav ul');
+      var overlay = document.querySelector('.menu-overlay');
+      var closeBtn = document.getElementById('mobileCloseBtn');
+      var menuBtn = document.getElementById('mobileMenuBtn');
+      nav.classList.remove('open');
+      overlay.classList.remove('open');
+      closeBtn.style.display = 'none';
+      menuBtn.style.display = 'flex';
+    }
+    document.querySelectorAll('.main-nav .dropdown > a').forEach(function(drop){
+      drop.addEventListener('click', function(e){
+        if(window.innerWidth <= 1024) {
+          e.preventDefault();
+          var parent = this.parentElement;
+          parent.classList.toggle('open');
+          document.querySelectorAll('.main-nav .dropdown').forEach(function(other){
+            if(other !== parent) other.classList.remove('open');
+          });
+        }
+      });
+    });
+    </script>
+</body>
+</html> 
